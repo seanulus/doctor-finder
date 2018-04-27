@@ -18,7 +18,7 @@ $(document).ready(function() {
       console.log(body);
 
       for (var i = 0; i < body.data.length; i++) {
-        $("#doctorInfo").append(`<li>First Name: ${body.data[i].profile.first_name}<br>Last name: ${body.data[i].profile.last_name}<br>Address: ${body.data[i].practices[0].visit_address.city}, ${body.data[i].practices[0].visit_address.state}<br>${body.data[i].practices[0].visit_address.street}<br>${body.data[i].practices[0].visit_address.zip}<br>Phone Number: ${body.data[i].practices[0].phones[0].number}<br>Accepting Patients: ${body.data[i].practices[0].accepts_new_patients}</li>`);
+        $("#doctorInfo").append(`<li>First Name: ${body.data[i].profile.first_name}<br>Last name: ${body.data[i].profile.last_name}<br>Address: ${body.data[i].practices[0].visit_address.city}, ${body.data[i].practices[0].visit_address.state}<br>${body.data[i].practices[0].visit_address.street}<br>${body.data[i].practices[0].visit_address.zip}<br>Phone Number: ${body.data[i].practices[0].phones[0].number}<br>Accepting Patients: ${body.data[i].practices[0].accepts_new_patients}<br>Website: <a href="${body.data[i].practices[0].website}">Click Here</a></li>`);
       }
     });
   });
