@@ -5,9 +5,14 @@ import './styles.css';
 import $ from 'jquery';
 
 $(document).ready(function() {
-  $('#').submit(function(event) {
+  $('#doctorData').submit(function(event) {
     event.preventDefault();
+    let api = new API();
+    let promise = api.makeCall();
+    promise.then(function(response) {
+      let body = JSON.parse(response);
+      console.log(body);
+    })
 
-    
   });
 });
