@@ -23,6 +23,7 @@
 * To view Jasmine tests, run npm test
 * To view project in development mode, run npm start
 * You will need an API key from https://developer.betterdoctor.com/. You will need to create a new account to get access to your new API key.
+* Place your API key in a .env file with the id exports.apiKey=[Your key here]
 
 ## Known Bugs
 * No known bugs.
