@@ -27,7 +27,6 @@ $(document).ready(function() {
     blankError(name, symptom, api);
     api.nameCall(name, symptom).then(function(response) {
       let body = JSON.parse(response);
-      console.log(body);
 
       for (var i = 0; i < body.data.length; i++) {
         $("#doctorInfo").append(`<li>First Name: ${body.data[i].profile.first_name}<br>
