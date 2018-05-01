@@ -10,21 +10,23 @@ let errorMessage = function(body) {
   }
 }
 
-let blankError = function(name, symptom, api) {
+let blankError = function(name, symptom) {
   if(name === "" && symptom === "") {
     alert("Please enter a doctor or a symptom");
-    api.abort();
+    $("#doctorInfo").hide();
   }
 }
+
 
 $(document).ready(function() {
   $('#doctorData').submit(function(event) {
     event.preventDefault();
     $('#doctorInfo').empty();
+    $('#doctorInfo').show();
     let api = new API();
     let name = $("#doctorName").val().toUpperCase();
     let symptom = $("#symptomName").val().toUpperCase();
-    blankError(name, symptom, api);
+    blankError(name, symptom);
     api.nameCall(name, symptom).then(function(response) {
       let body = JSON.parse(response);
 
