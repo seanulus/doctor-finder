@@ -16,12 +16,13 @@
 
 ## Setup/Installation Requirements
 
-* To view project code, _clone repository from_ https://github.com/william-chu/Project
+* To view project code, _clone repository from_ https://github.com/seanulus/doctor-finder
 * Install Node.js
 * Open terminal, navigate to project root folder and run npm install
 * To bundle and build project distribution folder, run npm run build
 * To view Jasmine tests, run npm test
 * To view project in development mode, run npm start
+* You will need an API key from https://developer.betterdoctor.com/. You will need to create a new account to get access to your new API key.
 
 ## Known Bugs
 * No known bugs.
